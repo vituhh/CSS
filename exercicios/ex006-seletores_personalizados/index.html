@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Criando Sites com HTML e CSS</h1>
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur <span class="basico">adipisicing elit</span>. Rerum exercitationem nobis ab quam numquam aperiam modi quis, deleniti illum impedit et doloribus sit ex maiores consequatur saepe molestias accusamus in?</p>
+    <h2 class="intermediario">HTML intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem nobis ab quam numquam aperiam modi quis, deleniti illum impedit et doloribus sit ex maiores consequatur saepe molestias accusamus in?</p>
+    <h2 class="avancado">HTML avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem nobis ab quam numquam aperiam modi quis, deleniti illum impedit et doloribus sit ex maiores consequatur saepe molestias accusamus in?</p>
+    <h1>Aprendendo CSS</h1>
+    <h2 class="basico">CSS básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem nobis ab quam numquam aperiam modi quis, deleniti illum impedit et doloribus sit ex maiores consequatur saepe molestias accusamus in?</p>
+    <h2 class="intermediario">CSS intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem nobis ab quam numquam aperiam modi quis, deleniti illum impedit et doloribus sit ex maiores consequatur saepe molestias accusamus in?</p>
+    <h2 class="avancado">CSS avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem nobis ab quam numquam aperiam modi quis, deleniti illum impedit et doloribus sit ex maiores consequatur saepe molestias accusamus in?</p>
+
+    <hr>
+    <h1 id="explicacao">Como criar as personalizações</h1>
+    <h3>ID</h3>
+    <p>
+        Para criar um seletor personalizado, basta criar um 'id' dentro da tag.
+        Assim, quando for formatar o estilo, ao invés de colocar o tipo de
+        elemento, coloque '#id_colocado{personalização}'.
+    </p>
+    <p><strong>Observações:</strong></p>
+    <ul>
+        <li>Em HTML é id = em CSS é #</li>
+        <li>Em HTML é class = em CSS é .</li>
+        <li>Não se pode utilizar o mesmo id para duas coisas no mesmo documento</li>
+    </ul>
+    <h3>Class</h3>
+    <p>
+        Para que se possa fazer alteração em vários elementos ao mesmo 
+        tempo, utiliza-se 'class="nome_da_classe"'. Conselho: não dê 
+        nome a classe de acordo com a forma do elemento, dê um nome
+        relacionado a função.
+    </p>
+    <p><strong>Obs:</strong></p>
+    <p>
+        Quando for definir as configurações para um elemento que está
+        com uma classe, não se coloca #nome_da_classe. Coloca-se
+        .nome_da_classe
+    </p>
+    <p>
+        .Pode-se colocar um elemento em duas classes diferentes, por exemplo:
+        <p>&lt;h2 class="avancado destaque"&gt;CSS avançado&lt;/h2&gt;</p>
+        Com isso, esse H2 terá as características de ambas as classes.
+    </p>
+    <p>
+        .Também é possível colocar id e class em um mesmo elemento, por exemplo:
+        <p>&lt;h1 id="principal" class="avancado"&gt;Criando Sites com HTML e CSS&lt;/h1&gt;</p>
+        Entretando, as configurações do id se sobrepõem as configurações
+        do class.
+    </p>
+    <h3>Span</h3>
+    <p>
+        A tag &lt;span&gt; serve para selecionar uma parte do texto e assim,
+        consegue-se criar um id ou uma class para aquela parte do texto e 
+        alterar somente o local selecionado.
+    </p>
+</body>
+</html>

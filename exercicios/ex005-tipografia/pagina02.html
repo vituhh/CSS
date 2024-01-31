@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="py-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+             /*
+            Medidas absolutas
+            cm, mm, in(polegada), px, pt, pc
+        
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+            */
+            font-size: 16px;
+        }
+
+        h1{
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <hr>
+    <h2>Mudando a fonte</h2>
+    <p>
+        Para mudar a fonte dos textos, pode-se utilizar um novo arquivo
+        .css ou na tag &lt;head&gt; coloque dentro da tag &lt;style&gt;: 
+        <p>parte_que_quer_mudar{ font-family: fonte_desejada;}</p>
+    </p>
+    <p><strong>Exemplo de código:</strong></p>
+    <p>
+        <p>&lt;style&gt;</p>
+            <p>body{</p>
+                <p>font-family: Arial, Helvetica, sans-serif;</p>
+            <p>}</p>
+
+            <p>h1, h2{</p>
+                <p>font-family: 'Times New Roman', Times, serif;</p>
+            <p>}</p>
+        &lt;/style&gt;
+    </p>
+    <hr>
+    <h2>Mudando o tamanho</h2>
+    <p>
+        Para mudar a medida das letras, pode-se utilizar um novo arquivo
+        .css ou na tag &lt;head&gt; coloque dentro da tag &lt;style&gt;:
+        <p>parte_que_quer_mudar{ font-size: tamanho_desejado;}</p>
+    </p>
+    <p><strong>Obs:</strong></p>
+    <p>As medidas de letras são divididas em medidas absolutas e medidas relativas:</p>
+    <ul>
+        <li>Medidas absolutas:
+            <ul>
+                <li>cm</li>
+                <li>mm</li>
+                <li>in(polegadas)</li>
+                <li><strong>px</strong></li>
+                <li>pt</li>
+                <li>pc</li>
+            </ul>
+        </li>
+        <li>Medidas relativas
+            <ul>
+                <li><strong>em</strong> (1em equivale a 16px)</li>
+                <li>ex</li>
+                <li>rem</li>
+                <li>vw</li>
+                <li>vh</li>
+                <li>%</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>Exemplo de código:</strong></p>
+    <p>
+        <p>&lt;style&gt;</p>
+            <p>body{</p>
+                <p>font-size: 1em;</p>
+            <p>}</p>
+        &lt;/style&gt;
+    </p>
+    <hr>
+    <h2>Peso das fontes</h2>
+    <p>
+        Para mudar o peso das letras, pode-se utilizar um novo arquivo
+        .css ou na tag &lt;head&gt; coloque dentro da tag &lt;style&gt;:
+        <p>parte_que_quer_mudar{ font-weight: peso_desejado;}</p>
+    </p>
+    <p><strong>Obs:</strong></p>
+    <p>Para o font-weight existem os seguintes pesos:</p>
+    <ul>
+        <li>Pesos com nomes:
+            <ul>
+                <li>lighter</li>
+                <li>normal</li>
+                <li>bold
+                <li>bolder</li>
+                </li>
+            </ul>
+        </li>
+        <li>Pesos numéricos:
+            <ul>
+                <li>100 - 900</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>Exemplo de código:</strong></p>
+    <p>
+        <p>&lt;style&gt;</p>
+            <p>body{</p>
+                <p>font-weight: normal;</p>
+            <p>}</p>
+        &lt;/style&gt;
+    </p>
+    <hr>
+    <h2>Mudando o estilo da fonte</h2>
+    <p>
+        Para mudar o estilo das letras, pode-se utilizar um novo arquivo
+        .css ou na tag &lt;head&gt; coloque dentro da tag &lt;style&gt;:
+        <p>parte_que_quer_mudar{ font-style: estilo_desejado;}</p>
+    </p>
+    <p><strong>Exemplo de código:</strong></p>
+    <p>
+        <p>&lt;style&gt;</p>
+            <p>body{</p>
+                <p>font-style: normal;</p>
+            <p>}</p>
+        &lt;/style&gt;
+    </p>
+    <hr>
+    <h2>Sublinhando a fonte</h2>
+    <p>
+        Para mudar sublinhar as letras, pode-se utilizar um novo arquivo
+        .css ou na tag &lt;head&gt; coloque dentro da tag &lt;style&gt;:
+        <p>parte_que_quer_mudar{ text-decoration: underline;}</p>
+    </p>
+    <p><strong>Exemplo de código:</strong></p>
+    <p>
+        <p>&lt;style&gt;</p>
+            <p>body{</p>
+                <p>text-decoration: underline;</p>
+            <p>}</p>
+        &lt;/style&gt;
+    </p>
+    <hr>
+    <h2>Shorthand font</h2>
+    <p>
+        O shorthand font é uma mãozinha que condensará todas as 
+        configurações de fonte em uma só.
+    </p>
+    <p><strong>Ordem dos font no shorthand:</strong></p>
+    <p>font-style -> font-weight -> font-size -> font-family</p>
+    <p><strong>Exemplo de código sem shorthand:</strong></p>
+    <p>
+        <p>&lt;style&gt;</p>
+            <p>h1{</p>
+                <p>font-family: 'Work Sans', sans-serif;</p>
+                    <p>font-weight: bolder;</p>
+                    <p>font-size: 3em;</p>
+                    <p>font-style: italic;</p>
+            <p>}</p>
+        &lt;/style&gt;
+    </p>
+    <p><strong>Exemplo de código com shorthand:</strong></p>
+    <p>
+        <p>&lt;style&gt;</p>
+            <p>h1{</p>
+                <p>font: italic bolder 3em 'Work Sans', sans-serif;</p>
+            <p>}</p>
+        &lt;/style&gt;
+    </p>
+
+    <p style="text-align: right;">
+        <a href="pagina03.html">Ir para a próxima página</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            display: inline-block;
+            background-color: rgb(198, 194, 194);
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <hr>
+    <p>
+        Pseudo-classes são palavras/comandos que definem estados de 
+        elementos dentro da HTML. 
+        <p>As pseudo-classes em CSS são representadas por ":"</p>
+    </p>
+    <h2>Exemplo de pseudo-classe utilizando div:</h2>
+    <h3>Código:</h3>
+    <p>
+        &lt;style&gt;
+
+        <p>Definindo as características das div's</p>
+        <p>div{</p>
+            <p>display: inline-block;</p>
+            <p>background-color: rgb(198, 194, 194);</p>
+            <p>border: 1px solid black;</p>
+            <p>text-align: center;</p>
+            <p>height: 200px;</p>
+            <p>width: 200px;</p>
+        <p>}</p>
+
+        <p>Definindo certo comportamento das div's utilizando a 
+            pseudo-classe 'hover'
+        </p>
+        <p>div:hover{</p>
+            <p>background-color: yellow;</p>
+        <p>}</p>
+        &lt;/style&gt;
+    </p>
+    <h3>Resultado:</h3>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <p style="text-align: right;">
+        <a href="hover.html">Ir para a próxima página</a>
+    </p>
+</body>
+</html>
