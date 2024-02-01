@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*Shorthand - background
+                color -> image -> position -> repeat -> [size] 
+                -> attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center
+            no-repeat fixed;
             background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -51,6 +61,9 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatum id sint similique rem quaerat adipisci perspiciatis tempora? Atque voluptatum nihil, enim officia quis suscipit distinctio doloremque culpa vitae earum.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem natus tempore aut quidem necessitatibus omnis, vel ipsa eligendi consequatur aperiam ea rem architecto commodi provident mollitia doloremque in? Nostrum, eos.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore incidunt odio dignissimos. Aut assumenda ut et in explicabo deleniti optio aperiam dolorum, saepe incidunt doloribus eveniet officiis repudiandae exercitationem eum!
+        </p>
+        <p style="text-align: center;">
+            <a href="fundo007.html">Ir para a próxima página</a>
         </p>
     </main>
 </body>
