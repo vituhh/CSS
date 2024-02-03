@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        tr.linha{
+            background-color: lightgray;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.dado{
+            background-color: rgb(252, 252, 76);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <hr>
+    <p>
+        Para criarmos uma tabela, primeiro temos que entender a hierarquia dos elementos da tabela. <br>
+    </p>
+    <h2>HIERARQUIA DE TABELAS SIMPLES</h2>
+    <p>
+            TABLE = tabela <br>
+            TABLE ROW = linha de tabela <br>
+                TABLE HEADER = cabeçalho de tabela <br>
+                TABLE DATA = dado de tabela <br>
+    </p>
+    <p>
+        Esses são as representações dos elementos em tags:
+        <ul>
+            <li>TABLE: &lt;table&gt;</li>
+            <li>TABLE ROW: &lt;tr&gt;</li>
+            <li>TABLE HEADER: &lt;th&gt;</li>
+            <li>TABLE DATA: &lt;td&gt;</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>Código</h2>
+    <h3>Exemplo de código:</h3>
+    <p>
+        &lt;table&gt; <br>
+            ...&lt;tr&gt; &lt;!-- Primeira linha --&gt; <br>
+                ......&lt;td&gt;A1&lt;/td&gt; <br>
+                ......&lt;td&gt;B1&lt;/td&gt; <br>
+                ......&lt;td&gt;C1&lt;/td&gt; <br>
+            ...&lt;/tr&gt; <br>
+            ...&lt;tr class="linha"&gt; <br>
+                ......&lt;td&gt;A2&lt;/td&gt; <br>
+                ......&lt;td&gt;B2&lt;/td&gt; <br>
+                ......&lt;td&gt;C2&lt;/td&gt; <br>
+            ...&lt;/tr&gt; <br>
+            ...&lt;tr&gt; <br>
+                ......&lt;td&gt;A3&lt;/td&gt; <br>
+                ......&lt;td class="dado"&gt;B3&lt;/td&gt; <br>
+                ......&lt;td&gt;C3&lt;/td&gt; <br>
+            ...&lt;/tr&gt; <br>
+        &lt;/table&gt; <br>
+    </p>
+    <h3>Exemplo de como alterar o estilo:</h3>
+    <p>
+        &lt;style&gt; <br>
+            ...body{ <br>
+                ......font-family: Arial, Helvetica, sans-serif; <br>
+            ...} <br>
+            ...table{ <br>
+                ......width: 400px; <br>
+                ......border-collapse: collapse; !!ESTE COMANDO É PARA JUNTAR AS BORDAS!!<br>
+            ...} <br>
+            ...tr.linha{ <br>
+                ......background-color: lightgray; <br>
+            ...} <br>
+            ...td{ <br>
+                ......border: 1px solid black; <br>
+                ......padding: 8px; <br>
+            ...} <br>
+            ...td.dado{ <br>
+                ......background-color: rgb(252, 252, 76); <br>
+            ...} <br>
+        &lt;/style&gt;
+    </p>
+    <h3>Resultado:</h3>
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="dado">B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+    <p style="text-align: right;">
+        <a href="tabela002.html">Ir para a próxima página</a>
+    </p>
+</body>
+</html>
