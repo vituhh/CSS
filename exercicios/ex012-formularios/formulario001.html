@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <!-- action: para onde os dados serão enviados
+            method: get - deixa os dados a mostra, 
+                        só pode enviar dados até 3000 bytes,
+                        não recomendado para enviar arquivos
+                    / post - esconde os dados
+            autocomplete: faz desaparecer as opções de como você já completou a caixa de texto antes
+        -->
+        <p><label for="inome">Nome:</label> <!-- O Label é utilizado para relacionoar o texto com a caixa de texto-->
+            <input type="text" name="nome" id="inome"></p> <!-- input: caixa de texto -->
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

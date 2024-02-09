@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" autocomplete="on" method="POST">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30"
+                size="15" placeholder="nome do usuário" autocomplete="username">
+            <!-- required: faz com que o campo seja obrigatório 
+                minlength: indica o mínimo de dígitos que pode ter no campo
+                maxlength: indica o máximo de dígitos que pode ter no campo
+                size: define o tamanho da caixa se baseando na quantidade de letras que vão caber
+                placeholder: frase de dica que ficará na caixa(muito usado para valores de dinheiro)
+            -->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" 
+                maxlength="20" size="8" autocomplete="current-password">
+            <!-- o 'input:password' oculta o que for digitado na caixa -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <!-- o 'input:submit' salva os dados em algum lugar e, quando voltar para o formulário, ele apaga a senha digitada -->
+            <input type="reset" value="Limpar">
+            <!-- o 'input:reset' limpa as informações nas caixas -->
+        </p>
+    </form>
+</body>
+</html>
