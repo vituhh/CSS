@@ -6,6 +6,51 @@
     <title>Formulários</title>
 </head>
 <body>
-    
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required 
+            maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" 
+            min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
+            <!--
+                input:number - cria uma caixa de texto que só aceita números e símbolos
+                step: mostra de quanto em quanto o número na caixa pode aumentar
+                value: tira o placeholder e inicia a caixa com um valor determinado
+                
+                quando a caixa for do tipo 'input:number', não se coloca minlength ou
+                maxlength, se coloca min e max
+            -->
+        </p>
+        <p>
+            <label for="mes">Período letivo:</label>
+            <input type="month" name="mes" id="imes">
+            <!--
+                'input:month' - cria uma caixa de texto que mostra mês e ano
+            -->
+        </p>
+        <p>
+            <label for="idia">Dia:</label>
+            <input type="date" name="dia" id="idia">
+            <!--
+                'input:date' - cria uma caixa de texto que mostra dia, mês e ano
+            -->
+        </p>
+        <p>
+            <label for="ihora">Horário da prova:</label>
+            <input type="time" name="hora" id="ihora">
+            <!--
+                'input:time' - cria uma caixa que é completada com horas e minutos
+            -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
